@@ -128,6 +128,7 @@ $($token)
     print $"
 Press (ansi yellow_bold)any key(ansi reset) to continue.
     "
+    input
 
 }
 
