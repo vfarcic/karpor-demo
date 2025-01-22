@@ -18,11 +18,11 @@ def "main setup" [] {
         main apply ingress contour --hyperscaler $hyperscaler
     )
 
-    apply headlamp $"headlamp.($ingress_data.host)"
-
     apply karpor
 
     apply apps
+
+    apply headlamp $"headlamp.($ingress_data.host)"
 
     main print source
 
@@ -124,6 +124,10 @@ $($token)
 ------------------
 "
     start $"http://($host)"
+
+    print $"
+Press (ansi yellow_bold)any key(ansi reset) to continue.
+    "
 
 }
 

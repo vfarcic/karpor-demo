@@ -2,7 +2,7 @@ ingress:
   enabled: true
   ingressClassName: contour
   hosts:
-  - host: headlamp.54.204.172.242.nip.io
+  - host: headlamp.4.157.136.174.nip.io
     paths:
     - path: /
       type: ImplementationSpecific
